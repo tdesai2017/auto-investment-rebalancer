@@ -1,3 +1,4 @@
+"Add hello at top"
 def balanced_investment_calculator(current_investment_division, desired_investment_percentages, additional_invesments)
 
   if desired_investment_percentages.values.sum != 100
@@ -91,26 +92,59 @@ end
 #Provide in dollars
 current_investment_division = 
 {
-QQQ: 2131.02,
-VCR: 2544.15,
-VGT: 2585.55,
 
 }
 
 #Provide in percentages
 desired_investment_percentages = {
 
-  VTI: 40.3,
-  VXUS: 21.7,
+  VTI: 44,
+  VEA: 13,
+  VWO: 13,
   QQQ: 15,
-  BIV: 9,
+  DGRW: 9,
   BNDX: 6,
-  VGSIX: 8
 }
 
-additional_invesments = 7445.69
+additional_invesments = 1000
 
 
 balanced_investment_calculator(current_investment_division, desired_investment_percentages, additional_invesments)
 
 
+"""
+
+Non-taxable Accounts (401k, IRA)
+
+Stocks (77% total )
+QQQ —> Domestic tech stocks = 15%  (ER: 0.2)
+VTI —> Domestic stocks (all)  = 38% (ER: 0.03) 
+VEA —> Foreign Developed Markets = 12% (ER: 0.05)
+VWO —> Foreign Emerging Markets = 12% (ER: 0.1)
+
+ 
+Bonds (15% total) 
+DGRW —> Wisdom Tree Dividend Growth fund (all) —> 60 = 9% (ER: 0.28)
+BNDX —> International Bonds (all) —> 40  = 6% (ER: 0.08)
+
+Real Estate (8% total)
+VNQ —> Real-estate = 8% (ER: 0.12)
+
+Taxable (Taxable Brokerage)
+
+85% total 
+QQQ —> Domestic tech stocks = 15%  (ER: 0.2)
+VTI —> Domestic stocks (all)  = 44% (ER: 0.03) 
+VEA —> Foreign Developed Markets = 13% (ER: 0.05)
+VWO —> Foreign Emerging Markets = 13% (ER: 0.1)
+
+ 
+15% total 
+DGRW —> Wisdom Tree Dividend Growth fund (all) —> 60 = 9% (ER: 0.28)
+BNDX —> International Bonds (all) 
+https://www.portfoliovisualizer.com/backtest-portfolio#analysisResults
+
+- Would switch to VMATX but it is too expense (minimum payment of 3000)
+
+
+"""
