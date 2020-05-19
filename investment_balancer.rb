@@ -152,24 +152,23 @@ end
 #Provide in dollars
 current_investment_division = 
 {
-  VTI: 100000,
-  POT: 10
+QQQ: 2131.02,
+VCR: 2544.15,
+VGT: 2585.55,
 
 }
 
 #Provide in percentages
 desired_investment_percentages = {
 
-  VTI: 44,
-  VEA: 13,
-  VWO: 13,
+  VTI: 40.3,
+  VXUS: 21.7,
   QQQ: 15,
-  DGRW: 9,
+  BIV: 9,
   BNDX: 6,
-  
+  VGSIX: 8
 }
 
-additional_invesments = 1000
 
 InvestmentBalancer.balanced_investment_calculator(current_investment_division: current_investment_division,
                                                   desired_investment_percentages: desired_investment_percentages, 
