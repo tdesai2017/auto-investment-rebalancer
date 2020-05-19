@@ -169,6 +169,8 @@ desired_investment_percentages = {
   VGSIX: 8
 }
 
+additional_invesments = 7445.69
+
 
 InvestmentBalancer.balanced_investment_calculator(current_investment_division: current_investment_division,
                                                   desired_investment_percentages: desired_investment_percentages, 
