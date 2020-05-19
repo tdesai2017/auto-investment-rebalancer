@@ -39,6 +39,8 @@ class InvestmentBalancer
     new_distributions = organize_dropped_securities_info(new_distributions: new_distributions, 
                                                         current_investment_division: current_investment_division)
 
+    print (new_distributions)
+
     new_distributions = structify_new_distributions(new_distributions: new_distributions)
 
     return new_distributions
